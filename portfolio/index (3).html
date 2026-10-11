@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malik Sharia | Frontend Developer</title>
+<meta name="description" content="Malik Sharia is a frontend developer who builds clean, responsive and accessible websites with HTML, CSS, JavaScript and React.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%20xmlns%3Ac2pa%3D%22http%3A//c2pa.org/manifest%22%3E%3Cmetadata%3E%3Cc2pa%3Amanifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpkN2I4MDcwOC1mMDg2LTRmMmItYjU3MS05YjZhNmZkY2Y5MjQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKaPCKHHI5DQ8Py36%2BuCnb8AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozYzE0YzMyNi01NDNhLTRjMDgtYmM4Ny0wNzRkOTY1NTJhNjVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoeiyNuNBtmfV1SGwYAnH9FgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggu1zctX83lt4Bl3ceS/kt1Vf42ixRLsBl2ZN1oh/XIC6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMevqDl0qR19C5gtTV/ZHFUAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAZZ%2B/IFjy%2ByuJJM7CCxRfJLwpqhQHNK%2BJiE22tdqTZvmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBh7Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmQ3YjgwNzA4LWYwODYtNGYyYi1iNTcxLTliNmE2ZmRjZjkyNC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmFhNDA4ZjA2LTg1OTItNGY2OC05MTQ3LWZhMDJlOTlhMGQzZnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCC7XNy1fzeW3gGXdx5L%2BS3VV/jaLFEuwGXZk3WiH9cgLqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggnWwfvBpLMiWb5rX1hd9krYA3qZ5p87CxoM8Z/AZaPO%2BiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggWlLOh9%2BB/XMSwWQ9FHgK3ZhbJKxWbS0WxxGCNFW0XWl0Y2xhaW1fZ2VuZXJhdG9yX2luZm%2BjZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj%2BOPEz5o%2BnMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1%2BUCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9%2B1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQLDWgwKlWkGCQRdPMRU2eEQxHH%2BTodyEzp07VKjB8SoVLB5AaX9Ahg/6wqi827wesYkgmRE3bW2Lyal4dj%2BGjRw%3D%3C/c2pa%3Amanifest%3E%3C/metadata%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%234c35c9%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2228%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EMS%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo"><span class="mark">MS</span>Malik Sharia</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact" class="btn btn-sm">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="status"><span class="pulse"></span>Open to frontend opportunities</p>
+      <h1>Malik Sharia</h1>
+      <h2>Frontend Developer</h2>
+      <p class="lead">I design and build clean, responsive and accessible websites with HTML, CSS, JavaScript and React. I care about structure, consistency and interfaces that are easy to use.</p>
+      <div class="cta">
+        <a href="#projects" class="btn">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <aside class="glance" aria-label="At a glance">
+      <svg viewBox="0 0 240 240" width="72" height="72" role="img" aria-label="Malik Sharia monogram" style="display:block;margin-bottom:1.2rem"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1a3a"/><stop offset="1" stop-color="#5b3df5"/></linearGradient></defs><rect width="240" height="240" rx="40" fill="url(#mg)"/><text x="120" y="148" font-family="Georgia,serif" font-size="92" font-weight="700" fill="#fff" text-anchor="middle">MS</text></svg>
+      <dl>
+        <div><dt>Role</dt><dd>Frontend Developer</dd></div>
+        <div><dt>Currently</dt><dd>Intern, MTech Solutions</dd></div>
+        <div><dt>Stack</dt><dd>HTML, CSS, JavaScript, React</dd></div>
+        <div><dt>Focus</dt><dd>Responsive and accessible UI</dd></div>
+      </dl>
+      <a href="mailto:maliksharia09@gmail.com" class="glance-mail">maliksharia09@gmail.com</a>
+    </aside>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap about">
+    <div>
+      <h2 class="title">About me</h2>
+      <p class="lead2">I'm a frontend developer focused on turning designs into polished, working interfaces.</p>
+    </div>
+    <div class="about-body">
+      <p>I'm currently completing a frontend development internship at MTech Solutions, where I build responsive websites and practise writing structured, readable code. I enjoy the details: spacing, typography, consistent components and fast load times.</p>
+      <p>My career goal is to grow into a professional frontend engineer who ships accessible, well-tested products with React and modern web tooling.</p>
+      <div class="facts">
+        <div><span>Education</span><strong>Commerce, Government College for Women</strong></div>
+        <div><span>Experience</span><strong>Frontend Intern, MTech Solutions</strong></div>
+        <div><span>Training</span><strong>Aptech, Shahrah-e-Faisal (in progress)</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section tint">
+  <div class="wrap">
+    <h2 class="title">Skills</h2>
+    <p class="sub">Technologies and tools I use to design, build and ship.</p>
+    <div class="grid g3">
+      <div class="card"><h3>Core languages</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li></ul><p>Semantic markup, modern layouts with Flexbox and Grid, and DOM scripting.</p></div>
+      <div class="card"><h3>Frameworks</h3><ul class="tags"><li>React basics</li><li>Responsive design</li><li>Component architecture</li></ul><p>Reusable components, hooks and state management for interactive interfaces.</p></div>
+      <div class="card"><h3>Workflow</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Netlify and Vercel</li></ul><p>Version control, clean commits and deploying to live URLs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="wrap">
+    <h2 class="title">Projects</h2>
+    <p class="sub">Selected work. Open each live demo or read the source on GitHub.</p>
+    <div class="grid g3">
+      <article class="card project">
+        <div class="thumb"><div class="pt pt1" aria-hidden="true"><span>HTML</span><small>Landing page</small></div></div>
+        <div class="pbody"><h3>Studio Landing Page</h3>
+        <p>A fully responsive marketing page with a sticky navbar, services, pricing tiers and smooth section scrolling.</p>
+        <ul class="tags"><li>HTML5</li><li>CSS3</li><li>Responsive</li></ul>
+        <div class="links"><a href="projects/landing-page.html">Live demo</a><a href="https://github.com/malik-sharia/portfolio/blob/main/projects/landing-page.html" target="_blank" rel="noopener">Source code</a></div></div>
+      </article>
+      <article class="card project">
+        <div class="thumb"><div class="pt pt2" aria-hidden="true"><span>JS</span><small>Task app</small></div></div>
+        <div class="pbody"><h3>Task Manager</h3>
+        <p>Add, complete, filter and delete tasks. Built with vanilla JavaScript, with tasks saved in the browser between visits.</p>
+        <ul class="tags"><li>JavaScript</li><li>DOM</li><li>LocalStorage</li></ul>
+        <div class="links"><a href="projects/task-manager.html">Live demo</a><a href="https://github.com/malik-sharia/portfolio/blob/main/projects/task-manager.html" target="_blank" rel="noopener">Source code</a></div></div>
+      </article>
+      <article class="card project">
+        <div class="thumb"><div class="pt pt3" aria-hidden="true"><span>Data</span><small>Finance tool</small></div></div>
+        <div class="pbody"><h3>Expense Tracker</h3>
+        <p>Track income and expenses with live balance totals, input validation and a clean responsive layout.</p>
+        <ul class="tags"><li>JavaScript</li><li>CSS Grid</li><li>Validation</li></ul>
+        <div class="links"><a href="projects/expense-tracker.html">Live demo</a><a href="https://github.com/malik-sharia/portfolio/blob/main/projects/expense-tracker.html" target="_blank" rel="noopener">Source code</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section tint">
+  <div class="wrap">
+    <h2 class="title">Services</h2>
+    <p class="sub">What I can build for your team or business.</p>
+    <div class="grid g4">
+      <div class="card"><h3>Website development</h3><p>Fast, clean websites built from a design or from scratch.</p></div>
+      <div class="card"><h3>Responsive design</h3><p>Layouts that work on phones, tablets and desktops.</p></div>
+      <div class="card"><h3>React interfaces</h3><p>Reusable components and interactive web applications.</p></div>
+      <div class="card"><h3>UI improvements</h3><p>Better spacing, accessibility and speed for existing sites.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap contact">
+    <div>
+      <h2 class="title">Contact</h2>
+      <p class="sub">Have a project, internship or role in mind? Send a message and I'll reply as soon as I can.</p>
+      <ul class="info">
+        <li><span>Email</span><a href="mailto:maliksharia09@gmail.com">maliksharia09@gmail.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/malik-sharia" target="_blank" rel="noopener">github.com/malik-sharia</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/malik-sharia-b89658431" target="_blank" rel="noopener">linkedin.com/in/malik-sharia-b89658431</a></li>
+      </ul>
+    </div>
+    <form id="form" class="card form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+      <small class="err" data-for="name"></small>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+      <small class="err" data-for="email"></small>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell me about your project"></textarea>
+      <small class="err" data-for="message"></small>
+      <button class="btn" type="submit">Send message</button>
+      <p class="ok" id="ok" role="status" hidden>Thanks! Your message is valid and ready to send.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div><a href="#home" class="logo"><span class="mark">MS</span>Malik Sharia</a><p>Frontend Developer. Building clean, responsive web interfaces.</p></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+      <a href="https://github.com/malik-sharia" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/malik-sharia-b89658431" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+  <div class="wrap copy"><p>&copy; <span id="year">2026</span> Malik Sharia. All rights reserved.</p></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
